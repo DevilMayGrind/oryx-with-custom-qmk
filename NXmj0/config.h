@@ -1,7 +1,7 @@
 #define PERMISSIVE_HOLD
 
 #define USB_SUSPEND_WAKEUP_DELAY 0
-#define SERIAL_NUMBER "NXmj0/XbqgMg"
+#define SERIAL_NUMBER "NXmj0/qmnZw6"
 #define LAYER_STATE_8BIT
 #define COMBO_COUNT 13
 
