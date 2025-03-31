@@ -26,17 +26,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                     KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT
   ),
   [2] = LAYOUT_voyager(
-    KC_TILD,        KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,                                          KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_TRANSPARENT, 
-    KC_GRAVE,       KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,                                        KC_CIRC,        KC_AMPR,        KC_ASTR,        KC_MINUS,       KC_PLUS,        KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,                                          KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,         
+    KC_TRANSPARENT, KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,                                        KC_CIRC,        KC_AMPR,        KC_ASTR,        KC_MINUS,       KC_PLUS,        KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_1,           KC_2,           KC_3,           KC_4,           KC_5,                                           KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           MT(MOD_RSFT, KC_BSPC),
-    KC_TRANSPARENT, KC_RPRN,        KC_LBRC,        KC_RBRC,        KC_LCBR,        KC_RCBR,                                        KC_PIPE,        KC_LPRN,        KC_TRANSPARENT, KC_DOT,         KC_SLASH,       KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_RPRN,        KC_LBRC,        KC_RBRC,        KC_LCBR,        KC_RCBR,                                        KC_GRAVE,       KC_LPRN,        KC_TRANSPARENT, KC_DOT,         KC_SLASH,       KC_TRANSPARENT, 
                                                     KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT
   ),
   [3] = LAYOUT_voyager(
     KC_F12,         KC_F1,          KC_F2,          KC_F3,          KC_F4,          KC_F5,                                          KC_F6,          KC_F7,          KC_F8,          KC_F9,          KC_F10,         KC_F11,         
-    KC_GRAVE,       KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,                                        KC_CIRC,        KC_AMPR,        KC_ASTR,        KC_MINUS,       KC_PLUS,        KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,                                        KC_CIRC,        KC_AMPR,        KC_ASTR,        KC_MINUS,       KC_PLUS,        KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_NO,          KC_PAGE_UP,     KC_HOME,        KC_END,         KC_PGDN,                                        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_TRANSPARENT, KC_TRANSPARENT, 
-    KC_TRANSPARENT, KC_LEFT_GUI,    KC_LEFT_ALT,    KC_BSPC,        KC_DELETE,      KC_TRANSPARENT,                                 KC_PIPE,        KC_LPRN,        KC_COMMA,       KC_RIGHT_ALT,   KC_RIGHT_GUI,   KC_TRANSPARENT, 
+    KC_TRANSPARENT, KC_LEFT_GUI,    KC_LEFT_ALT,    KC_BSPC,        KC_DELETE,      KC_TRANSPARENT,                                 KC_TILD,        KC_LPRN,        KC_COMMA,       KC_RIGHT_ALT,   KC_RIGHT_GUI,   KC_TRANSPARENT, 
                                                     KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_DELETE
   ),
   [4] = LAYOUT_voyager(
@@ -74,7 +74,7 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo5, LSFT(KC_LEFT_ALT)),
     COMBO(combo6, TT(4)),
     COMBO(combo7, KC_UNDS),
-    COMBO(combo8, TO(5)),
+    COMBO(combo8, TG(5)),
 };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
