@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT, KC_EXLM,        KC_AT,          KC_HASH,        KC_DLR,         KC_PERC,                                        KC_CIRC,        KC_AMPR,        KC_ASTR,        KC_MINUS,       KC_PLUS,        KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_NO,          KC_PAGE_UP,     KC_HOME,        KC_END,         KC_PGDN,                                        KC_LEFT,        KC_DOWN,        KC_UP,          KC_RIGHT,       KC_TRANSPARENT, KC_TRANSPARENT, 
     KC_TRANSPARENT, KC_LEFT_GUI,    KC_LEFT_ALT,    KC_BSPC,        KC_DELETE,      KC_TRANSPARENT,                                 KC_TILD,        KC_LPRN,        KC_COMMA,       KC_RIGHT_ALT,   KC_RIGHT_GUI,   KC_TRANSPARENT, 
-                                                    KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_DELETE
+                                                    KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT
   ),
   [4] = LAYOUT_voyager(
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 RGB_MODE_FORWARD,RGB_VAI,        RGB_VAD,        TOGGLE_LAYER_COLOR,RGB_TOG,        KC_TRANSPARENT, 
@@ -64,6 +64,7 @@ const uint16_t PROGMEM combo5[] = { KC_L, KC_U, COMBO_END};
 const uint16_t PROGMEM combo6[] = { KC_W, KC_F, KC_P, COMBO_END};
 const uint16_t PROGMEM combo7[] = { KC_C, KC_D, COMBO_END};
 const uint16_t PROGMEM combo8[] = { KC_ESCAPE, KC_1, COMBO_END};
+const uint16_t PROGMEM combo9[] = { MT(MOD_LALT, KC_X), KC_C, COMBO_END};
 
 combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo0, KC_ESCAPE),
@@ -75,6 +76,7 @@ combo_t key_combos[COMBO_COUNT] = {
     COMBO(combo6, TT(4)),
     COMBO(combo7, KC_UNDS),
     COMBO(combo8, TG(5)),
+    COMBO(combo9, KC_TAB),
 };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
